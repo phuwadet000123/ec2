@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+<title>CV</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
+</style>
+<body class="w3-light-grey w3-content" style="max-width:1600px">
+
+<!-- Sidebar/menu -->
+<nav class="w3-sidebar w3-collapse w3-dark-grey w3-animate-left" style="z-index:3;width:300px;" id="mySidebar"><br>
+  <div class="w3-container">
+    <a href="#" onclick="w3_close()" class="w3-hide-large w3-right w3-jumbo w3-padding w3-hover-grey" title="close menu">
+      <i class="fa fa-remove"></i>
+    </a>
+    <img src="file.jpg" style="width:45%;" class="w3-round"><br><br>
+    <h4><b>CV</b></h4>
+   
+  </div>
+  <div class="w3-bar-block">
+    
+    <a href="#about me" onclick="w3_close()" class="w3-bar-item w3-button w3-padding"><i class="fa fa-user fa-fw w3-margin-right"></i>ABOUT</a> 
+    <a href="#photo" onclick="w3_close()" class="w3-bar-item w3-button w3-padding "><i class="fa fa-th-large fa-fw w3-margin-right"></i>PHOTO</a> 
+    <a href="#contact" onclick="w3_close()" class="w3-bar-item w3-button w3-padding"><i class="fa fa-envelope fa-fw w3-margin-right"></i>CONTACT</a>
+  </div>
+ 
+</nav>
+
+<!-- Overlay effect when opening sidebar on small screens -->
+<div class="w3-overlay w3-hide-large w3-animate-opacity" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+
+<!-- !PAGE CONTENT! -->
+<div class="w3-main" style="margin-left:300px">
+
+    <header id="portfolio">   
+        <span class="w3-button w3-hide-large w3-xxlarge w3-hover-text-grey" onclick="w3_open()"><i class="fa fa-bars"></i></span>
+        <div class="w3-container">
+        <h1><b>My Portfolio</b></h1>
+        <div class="w3-section w3-bottombar w3-padding-16"></div>
+        </div>
+      </header>
+
+
+
+  <div class="w3-container w3-padding-large" style="margin-bottom:32px">
+    <h4 id ="about me"><b>About Me</b></h4>
+    <p>Name : Phuwadech Prathum <br>
+    Nackname : Tar<br>
+    Date of Birth : on Sunday 3th January 1998<br>
+    Age : 20 Year Old<br>
+    Marital Status : Single<br>
+    Nationality : Thai<br>
+    Blood : B</p>
+    <h4>My Favorite</h4>
+    <p>
+      Color : Black , Red , Blue<br>
+      Food : Somtum , Padthai<br>
+      Subject : Database , Web<br> 
+      Drink : Coke , Beer , 40 Dregee
+    </p>
+
+    <hr>
+    
+
+    <h4 id="photo"><b>Photo</b></h4>
+    <div class="w3-row w3-grayscale-min">
+        <div class="w3-quarter">
+          <img src="1.jpg" style="width:100%" onclick="onClick(this)" alt="Canoeing again">
+          <img src="2.jpg" style="width:100%" onclick="onClick(this)" alt="Quiet day at the beach. Cold, but beautiful">
+          <img src="3.jpg" style="width:100%" onclick="onClick(this)" alt="The Beach. Me. Alone. Beautiful">
+       </div>
+        
+       <div class="w3-quarter">
+          <img src="4.jpg" style="width:100%" onclick="onClick(this)" alt="A girl, and a train passing">
+          <img src="5.jpg" style="width:100%" onclick="onClick(this)" alt="Waiting for the bus in the desert">
+          <img src="9.jpg" style="width:132.5%" onclick="onClick(this)" alt="Nature again.. At its finest!">
+        </div>
+        
+        <div class="w3-quarter">
+          <img src="7.jpg" style="width:100%" onclick="onClick(this)" alt="Waiting for the bus in the desert">
+          <img src="6.jpg" style="width:134%" onclick="onClick(this)" alt="What a beautiful scenery this sunset">
+          
+        </div>
+    
+        <div class="w3-quarter">
+          <img src="10.jpg" style="width:100%" onclick="onClick(this)" alt="A boy surrounded by beautiful nature">
+          <img src="11.jpg" style="width:100%" onclick="onClick(this)" alt="A girl, and a train passing">
+          <img src="12.jpg" style="width:100%" onclick="onClick(this)" alt="Quiet day at the beach. Cold, but beautiful">
+        </div>
+      </div><br>
+<hr>
+    
+    <h4>Skills</h4>
+
+    <!-- Progress bars / Skills -->
+    <p>Phogrammer</p>
+    <div class="w3-grey">
+      <div class="w3-container w3-green w3-padding w3-center" style="width:30%">30%</div>
+    </div>
+    <p>Web Design</p>
+    <div class="w3-grey">
+      <div class="w3-container w3-yellow w3-padding w3-center" style="width:70%">70%</div>
+    </div>
+    <p>Games</p>
+    <div class="w3-grey">
+      <div class="w3-container w3-red w3-padding w3-center" style="width:80%">80%</div>
+    </div>
+    <p>
+      
+    </p>
+    <hr>
+    
+    
+    
+  
+  <!-- Contact Section -->
+  <div class="w3-container w3-padding-large w3-grey">
+    <h4 id="contact"><b>Contact Me</b></h4>
+    <div class="w3-row-padding w3-center w3-padding-24" style="margin:0 -16px">
+      <div class="w3-third w3-dark-grey">
+        <p><i class="fa fa-envelope w3-xxlarge w3-text-light-grey"></i></p>
+        <p>phuwadet00123@hotmail.com</p>
+      </div>
+      <div class="w3-third w3-dark-grey">
+        <p><i class="fa fa-facebook w3-xxlarge w3-text-light-grey"></i></p>
+        <p>@taphuwadet</p>
+      </div>
+      <div class="w3-third w3-dark-grey">
+        <p><i class="fa fa-phone w3-xxlarge w3-text-light-grey"></i></p>
+        <p>+66902984564</p>
+      </div>
+    </div>
+    <hr class="w3-opacity">
+   
+  </div>
+
+ 
+  
+  
+
+<!-- End page content -->
+</div>
+
+
+
+</body>
+</html>
